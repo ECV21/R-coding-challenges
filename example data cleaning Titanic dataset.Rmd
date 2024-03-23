@@ -18,14 +18,31 @@ When you save the notebook, an HTML file containing the code and output will be 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
 #Carga del paquete "readr"
+```{r}
 library(readr)
+```
+
+
 #Carga del archivo desde mi desktop
+```{r}
 ruta_archivo <- "C:/Users/eduar/Downloads/Ejercicios de python/proyecto de TITANIC Machine learning/train.csv"
+```
+
+
+
 #carga del archivo CSV
+
+```{r}
 datos <- read_csv(ruta_archivo)
+```
+
 
 #ver las primeras filas del dataframe
+```{r}
 head(datos)
+```
+
+
 
 
 
